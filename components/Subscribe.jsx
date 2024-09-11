@@ -6,7 +6,7 @@ const Subscribe = () => {
   return (
     <div className="bg-saffron w-full text-center pt-20 pb-20 mt-80">
       <h1 className="mx-20 text-4xl text-chakraBlue">
-        Join our Bharat&apos;s community!
+        Join our Bharat community!
       </h1>
       <div className="flex items-center justify-center p-8">
         <Link href="/">
