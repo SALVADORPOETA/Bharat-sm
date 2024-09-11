@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #138808;
+  --foreground: #171717;
+  --font-hind-madurai: 'Hind Madurai', sans-serif;
+  --font-lobster: 'Lobster', cursive;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+button {
+  @apply rounded-3xl bg-gradient-to-tr from-green to-chakraBlue text-gold;
+}
