@@ -1,6 +1,7 @@
 import { Tiro_Devanagari_Hindi } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
+import { AuthContextProvider } from './context/AuthContext'
 
 // localFont
 const geistSans = localFont({
@@ -16,7 +17,7 @@ const geistMono = localFont({
 
 const tiroDevanagariHindi = Tiro_Devanagari_Hindi({
   weight: ['400'],
-  subsets: ['latin'],
+  subsets: ['latin', 'devanagari'],
   variable: '--font-tiro-devanagari-hindi',
 })
 
@@ -31,7 +32,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${tiroDevanagariHindi.variable} antialiased`}
       >
-        {children}
+        <AuthContextProvider>{children}</AuthContextProvider>
       </body>
     </html>
   )

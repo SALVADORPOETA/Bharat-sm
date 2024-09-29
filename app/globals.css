@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #138808;
+  --background: linear-gradient(
+    to left,
+    #138808,
+    #0033a0
+  ); /* Gradient from green to chakraBlue */
   --foreground: #171717;
   --font-hind-madurai: 'Hind Madurai', sans-serif;
   --font-lobster: 'Lobster', cursive;
@@ -11,7 +15,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: linear-gradient(
+      to right,
+      #0a0a0a,
+      #0033a0
+    ); /* Adjust the gradient for dark mode */
     --foreground: #ededed;
   }
 }
@@ -19,7 +27,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-tiro-devanagari-hindi), serif;
 }
 
 @layer utilities {
@@ -28,6 +36,10 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
-  @apply rounded-3xl bg-gradient-to-tr from-green to-chakraBlue text-gold;
+  @apply rounded-3xl bg-gradient-to-tr from-green to-chakraBlue text-gold hover:scale-110 ease-in-out duration-300 focus:outline-none;
 }
