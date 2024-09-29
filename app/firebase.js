@@ -6,12 +6,12 @@ import { getAuth } from 'firebase/auth'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyA0K83Kb-PkyDUcwhh6lT5VZYtbFR1wY24',
-  authDomain: 'bharat-sm.firebaseapp.com',
-  projectId: 'bharat-sm',
-  storageBucket: 'bharat-sm.appspot.com',
-  messagingSenderId: '514728895896',
-  appId: '1:514728895896:web:aae542be8f9094e893f7ed',
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID,
 }
 
 // Initialize Firebase
