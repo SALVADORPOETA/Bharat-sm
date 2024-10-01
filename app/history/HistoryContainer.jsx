@@ -27,7 +27,7 @@ const HistoryContainer = () => {
 
         setTimeout(() => {
           window.scrollBy(0, -100)
-        }, 3000)
+        }, 1000)
       }
     }
   }, [scrollToId, history])
