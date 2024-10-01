@@ -62,42 +62,42 @@ const Content = () => {
             History
           </Link>
           <ul className="mt-2">
-            <Link href="/history?scrollToId=1">
+            <Link href="/history?scrollToId=9">
               <li className="hover:cursor-pointer hover:bg-green rounded-lg px-2 hover:py-1 ease-in-out duration-200 border-b">
                 Bronze Age
               </li>
             </Link>
-            <Link href="/history?scrollToId=2">
+            <Link href="/history?scrollToId=10">
               <li className="hover:cursor-pointer hover:bg-green rounded-lg px-2 hover:py-1 ease-in-out duration-200 border-b">
                 Iron Age
               </li>
             </Link>
-            <Link href="/history?scrollToId=3">
+            <Link href="/history?scrollToId=11">
               <li className="hover:cursor-pointer hover:bg-green rounded-lg px-2 hover:py-1 ease-in-out duration-200 border-b">
                 Classical period
               </li>
             </Link>
-            <Link href="/history?scrollToId=4">
+            <Link href="/history?scrollToId=12">
               <li className="hover:cursor-pointer hover:bg-green rounded-lg px-2 hover:py-1 ease-in-out duration-200 border-b">
                 Early medieval period
               </li>
             </Link>
-            <Link href="/history?scrollToId=5">
+            <Link href="/history?scrollToId=13">
               <li className="hover:cursor-pointer hover:bg-green rounded-lg px-2 hover:py-1 ease-in-out duration-200 border-b">
                 Late medieval period
               </li>
             </Link>
-            <Link href="/history?scrollToId=6">
+            <Link href="/history?scrollToId=14">
               <li className="hover:cursor-pointer hover:bg-green rounded-lg px-2 hover:py-1 ease-in-out duration-200 border-b">
                 Early modern period
               </li>
             </Link>
-            <Link href="/history?scrollToId=7">
+            <Link href="/history?scrollToId=15">
               <li className="hover:cursor-pointer hover:bg-green rounded-lg px-2 hover:py-1 ease-in-out duration-200 border-b">
                 Late modern and contemporary period
               </li>
             </Link>
-            <Link href="/history?scrollToId=8">
+            <Link href="/history?scrollToId=16">
               <li className="hover:cursor-pointer hover:bg-green rounded-lg px-2 hover:py-1 ease-in-out duration-200 border-b">
                 Independence and partition
               </li>
