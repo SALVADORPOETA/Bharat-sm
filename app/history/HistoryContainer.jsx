@@ -20,7 +20,7 @@ const HistoryContainer = () => {
   const scrollToId = searchParams.get('scrollToId')
 
   useEffect(() => {
-    if (scrollToId) {
+    if (scrollToId && history.length > 0) {
       const element = document.getElementById(scrollToId)
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -30,7 +30,7 @@ const HistoryContainer = () => {
         }, 3000)
       }
     }
-  }, [scrollToId])
+  }, [scrollToId, history])
 
   useEffect(() => {
     const apiURL = 'https://bharat-api-sm.vercel.app/history'
