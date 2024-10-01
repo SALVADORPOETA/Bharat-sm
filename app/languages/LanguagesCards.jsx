@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react'
 import LanguagesModal from './LanguagesModal'
-import { dataLanguages } from '@/data/dataLanguages'
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 import axios from 'axios'
 
