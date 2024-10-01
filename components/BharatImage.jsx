@@ -60,6 +60,8 @@ const BharatImage = ({ image, title, description, className }) => {
         alt={title}
         className={`rounded-[20%] hover:scale-105 ease-in-out duration-500 cursor-pointer h-full w-full md:max-h-[250px] lg:max-h-[350px] ${className}`}
         onClick={handleImageClick1}
+        width={300}
+        height={300}
       />
       {isModalOpen1 && (
         <div className="fixed inset-0 top-[90px] flex items-center justify-center bg-gray-900 bg-opacity-50">
@@ -76,6 +78,8 @@ const BharatImage = ({ image, title, description, className }) => {
                     'p-4 mx-auto my-4 rounded-[20%] hover:scale-105 ease-in-out duration-300 cursor-pointer'
                   }
                   onClick={handleImageClick2}
+                  width={300}
+                  height={300}
                 />
                 {isModalOpen2 && (
                   <div className="fixed inset-0 top-[90px] flex items-center justify-center bg-gray-900 bg-opacity-50">
@@ -90,6 +94,8 @@ const BharatImage = ({ image, title, description, className }) => {
                           style={{
                             objectFit: 'contain',
                           }}
+                          width={1000}
+                          height={1000}
                         />
                         <div className="absolute top-4 right-4 lg:right-8 p-4">
                           <IoIosCloseCircle

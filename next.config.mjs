@@ -9,6 +9,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'bharat-api-sm.vercel.app',
+        port: '',
+        pathname: '/assets/**', // Adjust the pathname as needed
+      },
     ],
   },
 }

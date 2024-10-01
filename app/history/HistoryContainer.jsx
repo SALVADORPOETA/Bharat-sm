@@ -1,16 +1,17 @@
 'use client'
 
-import { Suspense } from 'react'
 import React, { useState, useEffect } from 'react'
-import { dataHistory } from '@/data/dataHistory'
 import BharatTextSection from '../../components/BharatTextSection'
 import HistoryText from './HistoryText'
 import BharatTextP2 from '../../components/BharatTextP2'
 import BharatImage from '../../components/BharatImage'
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 import { useSearchParams } from 'next/navigation'
+import axios from 'axios'
 
 const HistoryContainer = () => {
+  const [history, setHistory] = useState([])
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -31,10 +32,21 @@ const HistoryContainer = () => {
     }
   }, [scrollToId])
 
-  const [sections] = useState(dataHistory)
+  useEffect(() => {
+    const apiURL = 'https://bharat-api-sm.vercel.app/history'
+    axios
+      .get(apiURL)
+      .then((response) => {
+        setHistory(response.data)
+      })
+      .catch((error) => {
+        console.error('Error fetching data from API: ', error)
+      })
+  }, [])
+
   return (
     <div className="bg-gradient-to-l from-green to-chakraBlue m-8 mt-[120px]">
-      {sections.map((item) => (
+      {history.map((item) => (
         <div key={item.id.toString()}>
           <div
             key={item.id}

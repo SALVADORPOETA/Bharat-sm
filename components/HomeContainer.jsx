@@ -1,23 +1,36 @@
 'use client'
 
-import React, { useState } from 'react'
-import { dataHome } from '@/data/dataHome'
+import React, { useEffect, useState } from 'react'
 import BharatMeaning from './BharatMeaning'
 import HomeText from './HomeText'
 import HomeImage from './BharatImage'
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 import HomeTextP2 from './BharatTextP2'
 import HomeTextSection from './BharatTextSection'
+import axios from 'axios'
 
 const HomeContainer = () => {
+  const [home, setHome] = useState([])
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  const [sections] = useState(dataHome)
+  useEffect(() => {
+    const apiURL = 'https://bharat-api-sm.vercel.app/home'
+    axios
+      .get(apiURL)
+      .then((response) => {
+        setHome(response.data)
+      })
+      .catch((error) => {
+        console.error('Error fetching data from API: ', error)
+      })
+  }, [])
+
   return (
     <div className="bg-gradient-to-l from-green to-chakraBlue m-8">
-      {sections.map((item) => (
+      {home.map((item) => (
         <div key={item.id}>
           <div
             key={item.id}

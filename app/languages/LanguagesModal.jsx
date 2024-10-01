@@ -62,6 +62,8 @@ const LanguagesModal = ({ image, name, description, family }) => {
           alt={name}
           className="absolute inset-0 w-full h-full object-cover rounded-t-lg hover:cursor-pointer"
           onClick={handleImageClick1}
+          width={300}
+          height={300}
         />
       </div>
       <div className="flex justify-between px-4 py-6 bg-gold rounded-b-lg border-y border-chakraBlue">
@@ -88,6 +90,8 @@ const LanguagesModal = ({ image, name, description, family }) => {
                       'p-4 mx-auto my-4 rounded-[20%] hover:scale-105 ease-in-out duration-300 cursor-pointer'
                     }
                     onClick={handleImageClick2}
+                    width={300}
+                    height={300}
                   />
                   {isModalOpen2 && (
                     <div className="fixed inset-0 top-[90px] flex items-center justify-center bg-gray-900 bg-opacity-50">
@@ -102,6 +106,8 @@ const LanguagesModal = ({ image, name, description, family }) => {
                             style={{
                               objectFit: 'contain',
                             }}
+                            width={1000}
+                            height={1000}
                           />
                           <div className="absolute top-4 right-4 lg:right-8 p-4">
                             <IoIosCloseCircle

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import LanguagesModal from './LanguagesModal'
 import { dataLanguages } from '@/data/dataLanguages'
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
+import axios from 'axios'
 
 const LanguagesCards = () => {
   const scrollToTop = () => {
@@ -14,8 +15,18 @@ const LanguagesCards = () => {
   const [allLanguages, setAllLanguages] = useState([])
 
   useEffect(() => {
-    setLanguages(dataLanguages)
-    setAllLanguages(dataLanguages)
+    // setLanguages(dataLanguages)
+    // setAllLanguages(dataLanguages)
+    const apiURL = 'https://bharat-api-sm.vercel.app/languages'
+    axios
+      .get(apiURL)
+      .then((response) => {
+        setLanguages(response.data)
+        setAllLanguages(response.data)
+      })
+      .catch((error) => {
+        console.error('Error fetching data from API: ', error)
+      })
   }, [])
 
   const filterType = (family) => {
