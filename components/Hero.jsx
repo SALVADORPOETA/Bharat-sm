@@ -33,14 +33,14 @@ const Hero = () => {
             <span className="text-gold">Bharat,</span> the sacred land
           </h2>
           <p className="text-gold text-2xl">For The Seekers of Dharma</p>
-          {!user ? (
-            <Link href="/signin">
-              <button className="px-7 py-3 m-4">Sign In</button>
-            </Link>
-          ) : (
+          {user ? (
             <button className="px-7 py-3 m-4" onClick={handleSignOut}>
               Log Out
             </button>
+          ) : (
+            <Link href="/signin">
+              <button className="px-7 py-3 m-4">Sign In</button>
+            </Link>
           )}
         </div>
       </div>
