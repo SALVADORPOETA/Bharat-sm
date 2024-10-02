@@ -24,8 +24,8 @@ const SignInEmail = () => {
     }
   }
   return (
-    <div className="h-[82vh] mt-[120px]">
-      <div className="bg-saffron text-chakraBlue mx-8 mb-36 md:mb-8 rounded-xl">
+    <div className="h-[82vh] mt-[120px] mb-8 md:mb-6 lg:mb-4 xl:mb-0">
+      <div className="bg-saffron text-chakraBlue mx-8 mb-8 rounded-xl">
         <div>
           <h1 className="text-center pt-12 pb-4 text-3xl md:text-4xl">
             Sign In to <span className="text-deepRed">Your </span> Account
