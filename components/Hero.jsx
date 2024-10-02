@@ -25,7 +25,7 @@ const Hero = () => {
     <div className="flex">
       <div className="w-full lg:w-[70%] h-screen flex justify-center items-center relative">
         <Slider />
-        <div className="absolute w-[70%] h-[60%] flex flex-col justify-center items-center bg-black/70 rounded-2xl text-white">
+        <div className="absolute w-[70%] h-[60%] flex flex-col justify-center items-center bg-black/70 rounded-2xl text-white text-center">
           <h1 className="text-4xl">
             Eternal <span className="text-gold">India:</span>
           </h1>
