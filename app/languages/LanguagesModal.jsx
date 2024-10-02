@@ -55,7 +55,7 @@ const LanguagesModal = ({ image, name, description, family }) => {
   }
 
   return (
-    <div className="flex flex-col border border-chakraBlue shadow-lg rounded-lg hover:scale-105 duration-300 max-h-full bg-green">
+    <div className="flex flex-col border border-chakraBlue shadow-lg rounded-lg hover:scale-105 duration-300 max-h-full bg-gray-300">
       <div className="flex relative h-[200px] w-full">
         <Image
           src={image}
