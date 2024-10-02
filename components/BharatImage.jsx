@@ -87,7 +87,7 @@ const BharatImage = ({ image, title, description, className }) => {
                       ref={modalRef2}
                       className="bg-green p-5 rounded-xl shadow-lg max-w-full max-h-full overflow-auto relative"
                     >
-                      <div className="flex justify-center items-center w-full h-full">
+                      <div className="flex justify-center items-center w-full h-full bg-gray-300">
                         <Image
                           src={image}
                           alt={title}
