@@ -2,13 +2,25 @@ import React from 'react'
 
 const ContactForm = () => {
   return (
-    <div className="mt-[120px] w-full h-[73vh] px-8 mb-14">
+    <div className="mt-[120px] w-full h-[73vh] px-8 mb-36 md:mb-14">
       <div className="bg-saffron rounded-xl px-10 pt-7 pb-10">
         <h1 className="text-2xl font-bold text-center pb-4 text-chakraBlue">
           Contact Us!
         </h1>
         <form className="max-w-[600px] m-auto">
-          <div className="grid grid-cols-2 gap-2">
+          <div className="hidden md:grid grid-cols-2 gap-2">
+            <input
+              className="border border-chakraBlue bg-slate-200 rounded-3xl shadow-lg p-3 focus:outline-none text-chakraBlue caret-inherit"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              type="email"
+              className="border border-chakraBlue bg-slate-200 rounded-3xl shadow-lg p-3 focus:outline-none text-chakraBlue caret-inherit"
+              placeholder="Email"
+            />
+          </div>
+          <div className="grid grid-cols-1 gap-2 md:hidden">
             <input
               className="border border-chakraBlue bg-slate-200 rounded-3xl shadow-lg p-3 focus:outline-none text-chakraBlue caret-inherit"
               type="text"
