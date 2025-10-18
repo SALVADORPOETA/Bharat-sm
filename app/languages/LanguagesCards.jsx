@@ -24,12 +24,13 @@ const LanguagesCards = () => {
   }
 
   useEffect(() => {
-    const apiURL = 'https://bharat-api-sm.vercel.app/languages'
+    const apiURL = 'https://apis-repository-sm.vercel.app/api/bharat/languages'
     axios
       .get(apiURL)
       .then((response) => {
-        setLanguages(response.data)
-        setAllLanguages(response.data)
+        const sorted = response.data.sort((a, b) => a.idNum - b.idNum)
+        setLanguages(sorted)
+        setAllLanguages(sorted)
         setLoading(false)
       })
       .catch((error) => {
@@ -94,7 +95,7 @@ const LanguagesCards = () => {
                 .map((_, index) => <SkeletonCard key={index} />)
             : languages.map((item) => (
                 <LanguagesModal
-                  key={item.id}
+                  key={item.idNum}
                   image={item.image}
                   name={item.name}
                   description={item.description}

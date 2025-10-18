@@ -42,11 +42,12 @@ const HistoryContainer = () => {
   }, [scrollToId, history])
 
   useEffect(() => {
-    const apiURL = 'https://bharat-api-sm.vercel.app/history'
+    const apiURL = 'https://apis-repository-sm.vercel.app/api/bharat/history'
     axios
       .get(apiURL)
       .then((response) => {
-        setHistory(response.data)
+        const sorted = response.data.sort((a, b) => a.idNum - b.idNum)
+        setHistory(sorted)
         setLoading(false)
       })
       .catch((error) => {
@@ -62,13 +63,13 @@ const HistoryContainer = () => {
             .fill(0)
             .map((_, index) => <SkeletonSection key={index} />)
         : history.map((item) => (
-            <div key={item.id.toString()}>
+            <div key={item.idNum}>
               <div
-                key={item.id}
-                id={item.id.toString()}
+                key={item.idNum}
+                id={item.idNum}
                 className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 px-4 md:px-8 md:pt-8 md:pb-16 lg:px-4 lg:pt-0 lg:pb-0 my-8 bg-saffron rounded-xl"
               >
-                {item.id % 2 !== 0 ? (
+                {item.idNum % 2 !== 0 ? (
                   <>
                     <div className="hidden md:flex lg:hidden col-span-12">
                       <BharatTextSection section={item.section} />
@@ -77,7 +78,7 @@ const HistoryContainer = () => {
                       <div className="pt-8 pb-16 grid grid-cols-1 md:grid-cols-12 md:p-0 lg:px-8 lg:pt-8 lg:pb-8 md:col-span-12">
                         <div className="flex w-full md:items-end md:col-span-7 lg:col-span-8">
                           <HistoryText
-                            id={item.id}
+                            id={item.idNum}
                             section={item.section}
                             p1={item.p1}
                             p2={item.p2}
@@ -113,8 +114,8 @@ const HistoryContainer = () => {
                       </div>
                       <div className="md:col-span-7 lg:col-span-8">
                         <HistoryText
-                          key={item.id}
-                          id={item.id}
+                          key={item.idNum}
+                          id={item.idNum}
                           section={item.section}
                           p1={item.p1}
                           p2={item.p2}

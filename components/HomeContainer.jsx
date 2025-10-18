@@ -26,11 +26,12 @@ const HomeContainer = () => {
   }
 
   useEffect(() => {
-    const apiURL = 'https://bharat-api-sm.vercel.app/home'
+    const apiURL = 'https://apis-repository-sm.vercel.app/api/bharat/home'
     axios
       .get(apiURL)
       .then((response) => {
-        setHome(response.data)
+        const sorted = response.data.sort((a, b) => a.idNum - b.idNum)
+        setHome(sorted)
         setLoading(false)
       })
       .catch((error) => {
@@ -46,13 +47,13 @@ const HomeContainer = () => {
             .fill(0)
             .map((_, index) => <SkeletonSection key={index} />)
         : home.map((item) => (
-            <div key={item.id}>
+            <div key={item.idNum}>
               <div
-                key={item.id}
-                id={item.id}
+                key={item.idNum}
+                id={item.idNum}
                 className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 px-4 md:px-8 md:pt-8 md:pb-16 lg:px-4 lg:pt-0 lg:pb-0 my-8 bg-saffron rounded-xl"
               >
-                {item.id % 2 !== 0 ? (
+                {item.idNum % 2 !== 0 ? (
                   <>
                     <div className="hidden md:flex lg:hidden col-span-12">
                       <HomeTextSection section={item.section} />
@@ -60,12 +61,12 @@ const HomeContainer = () => {
                     <>
                       <div
                         className={`pt-8 pb-16 grid grid-cols-1 md:grid-cols-12 md:p-0 lg:px-8 lg:pt-8 ${
-                          item.id === 1 ? 'lg:pb-0' : 'lg:pb-8'
+                          item.idNum === 1 ? 'lg:pb-0' : 'lg:pb-8'
                         } md:col-span-12`}
                       >
                         <div className="flex w-full md:items-end md:col-span-7 lg:col-span-8">
                           <HomeText
-                            id={item.id}
+                            id={item.idNum}
                             section={item.section}
                             p1={item.p1}
                             p2={item.p2}
@@ -84,7 +85,7 @@ const HomeContainer = () => {
                         <HomeTextP2 p2={item.p2} />
                       </div>
                     </>
-                    {item.id === 1 ? (
+                    {item.idNum === 1 ? (
                       <div className="hidden md:grid col-span-12 justify-center items-center md:mt-4 lg:mt-0 mb-8">
                         <BharatMeaning />
                       </div>
@@ -106,8 +107,8 @@ const HomeContainer = () => {
                       </div>
                       <div className="md:col-span-7 lg:col-span-8">
                         <HomeText
-                          key={item.id}
-                          id={item.id}
+                          key={item.idNum}
+                          id={item.idNum}
                           section={item.section}
                           p1={item.p1}
                           p2={item.p2}
