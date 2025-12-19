@@ -77,7 +77,7 @@ The project emphasizes **clarity of domain**, **scalability**, and **production-
 ### Prerequisites
 
 - Node.js 18+
-- npm or yarn
+- npm
 
 ### Installation
 
