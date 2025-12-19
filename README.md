@@ -153,8 +153,6 @@ Bharat was built as a **serious portfolio project**, intended to demonstrate rea
 - **GitHub:** [https://github.com/SALVADORPOETA](https://github.com/SALVADORPOETA)
 - **LinkedIn:** [https://www.linkedin.com/in/salvador-martinez-sm/](https://www.linkedin.com/in/salvador-martinez-sm/)
 
-Made by **Salvador Martínez**.
-
 ---
 
 ## ⚖️ License
@@ -163,12 +161,6 @@ This is a portfolio project.
 
 No commercial use intended.  
 All rights reserved to the author.
-
----
-
-## 📸 Screenshots
-
-*Coming soon*
 
 ---
 
