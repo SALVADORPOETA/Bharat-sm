@@ -1,7 +1,5 @@
 # Bharat
 
-# 🇮🇳 Bharat — A Cultural & Historical Web Platform
-
 Bharat is a **fully original web application** built to present the history, languages, symbolism, and cultural identity of India through a modern, interactive, and scalable web architecture.
 
 This project was **designed, architected, and implemented from scratch** as a portfolio-grade application, focusing on clean UI composition, dynamic data consumption, authentication flows, and responsive behavior across devices.
