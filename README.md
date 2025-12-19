@@ -145,7 +145,7 @@ Bharat was built as a **serious portfolio project**, intended to demonstrate rea
 
 ---
 
-## 👤 Author
+## 👨🏽‍💻 Author
 
 **Salvador Martínez**  
 *Full-Stack Developer*
