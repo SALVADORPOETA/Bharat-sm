@@ -173,3 +173,9 @@ This is a personal portfolio project and is not open for contributions at this t
 ## 📧 Contact
 
 For inquiries or feedback, please reach out via [LinkedIn](https://www.linkedin.com/in/salvador-martinez-sm/) or GitHub.
+
+---
+
+## 🙏 Acknowledgments
+
+Inspired by the enduring legacy and fascinating history of India.
