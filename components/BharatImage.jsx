@@ -109,7 +109,7 @@ const BharatImage = ({ image, title, description, className }) => {
                 )}
               </div>
               <div className="col-span-1 flex flex-col items-center justify-center h-full text-center">
-                <h1 className="text-lg md:text-2xl mb-4">{title}</h1>
+                <h1 className="text-xl md:text-2xl mb-4">{title}</h1>
                 <p>{description}</p>
               </div>
             </div>
