@@ -76,12 +76,12 @@ const LanguagesModal = ({ image, name, description, family }) => {
       </div>
       {isModalOpen1 &&
         createPortal(
-          <div className="fixed inset-0 top-[90px] flex items-center justify-center bg-gray-900 bg-opacity-50">
+          <div className="fixed inset-0 flex items-center justify-center bg-gray-900/60 z-50">
             <div
               ref={modalRef1}
               className="bg-saffron p-5 rounded-xl shadow-lg max-w-[500px]"
             >
-              <div className="grid grid-cols-2 mb-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 mb-4">
                 <div className="col-span-1 flex justify-center items-center">
                   <Image
                     src={image}
@@ -90,8 +90,8 @@ const LanguagesModal = ({ image, name, description, family }) => {
                       'p-4 mx-auto my-4 rounded-[20%] hover:scale-105 ease-in-out duration-300 cursor-pointer'
                     }
                     onClick={handleImageClick2}
-                    width={300}
-                    height={300}
+                    width={200}
+                    height={200}
                   />
                   {isModalOpen2 && (
                     <div className="fixed inset-0 top-[90px] flex items-center justify-center bg-gray-900 bg-opacity-50">
