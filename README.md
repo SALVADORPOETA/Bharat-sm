@@ -22,6 +22,14 @@ It is a **custom-designed platform** that combines:
 
 The project emphasizes **clarity of domain**, **scalability**, and **production-ready patterns**.
 
+<img width="765" height="633" alt="bharat-home" src="https://github.com/user-attachments/assets/6399c783-2fdc-4bdd-b68c-4073d098b932" />
+
+<img width="765" height="631" alt="bharat-history" src="https://github.com/user-attachments/assets/01fa9bda-1212-4be9-ac02-9c6d0c99bfbd" />
+
+<img width="763" height="631" alt="bharat-languages" src="https://github.com/user-attachments/assets/5d47b057-8a7a-4499-a0e4-b9f34185311c" />
+
+<img width="763" height="631" alt="bharat-languages-1" src="https://github.com/user-attachments/assets/3aefc8bb-f7b7-4e47-a905-1e392d1b5410" />
+
 ---
 
 ## 🧠 Key Features
