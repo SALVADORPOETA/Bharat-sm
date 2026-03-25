@@ -22,11 +22,30 @@ It is a **custom-designed platform** that combines:
 
 The project emphasizes **clarity of domain**, **scalability**, and **production-ready patterns**.
 
+---
+## 📖 Pages
+
+### Home Page
+
+This page serves as a multidimensional introduction to both ancient and modern India, utilizing a dynamic grid layout that alternates across eight fundamental pillars: from politics and economy to geography and society. Technically, it stands out for its advanced conditional rendering, which reorders content (images and secondary paragraphs) based on the user's device to ensure a logical visual hierarchy. The color palette—Saffron, White, and Green—reinforces the national identity, while the integration of an external API ensures that macroeconomic and demographic data remain accurate and up-to-date.
+
 <img width="765" height="633" alt="bharat-home" src="https://github.com/user-attachments/assets/6399c783-2fdc-4bdd-b68c-4073d098b932" />
+
+### History Page
+
+The History page offers a profound chronological journey spanning over 5,000 years, from the Indus Valley Civilization to the contemporary era. The technical core of this section is its intelligent URL-parameter navigation system, which allows users to jump to specific eras with a smooth-scroll effect calibrated to offset the fixed Navbar height. Each historical block is enriched with archaeological evidence and detailed descriptions, managed through a sorting algorithm that ensures narrative integrity regardless of the asynchronous data loading sequence.
 
 <img width="765" height="631" alt="bharat-history" src="https://github.com/user-attachments/assets/01fa9bda-1212-4be9-ac02-9c6d0c99bfbd" />
 
+### Languages Page
+
+Designed as a high-performance educational catalog, this page manages the staggering diversity of India's 22 official languages. It implements a dual-state React architecture to allow instantaneous filtering by language families (Indo-Aryan, Dravidian, etc.) without network latency. The user experience is elevated through a nested modal system built with Portals, allowing users to dive deep into each language's description and view scripts in high resolution via an immersive gallery, all while maintaining a clean interface optimized with Skeleton Loaders.
+
 <img width="763" height="631" alt="bharat-languages" src="https://github.com/user-attachments/assets/5d47b057-8a7a-4499-a0e4-b9f34185311c" />
+
+### Languages Modal
+
+The Languages Modal is a sophisticated interaction component that leverages React Portals to decouple complex UI elements from the main DOM tree, ensuring a seamless overlay experience without z-index conflicts. It features a dual-layered navigation system where the first layer provides a structured overview of the language’s family, speakers, and geographic reach, while a secondary, nested portal allows users to trigger a high-resolution, full-screen immersive view of the image. To optimize user experience, the component integrates custom React Hooks (useRef and useEffect) for intelligent outside-click detection and event listener cleanup, all while maintaining the project's thematic integrity through a responsive design styled with the national colors of Bharat.
 
 <img width="763" height="631" alt="bharat-languages-1" src="https://github.com/user-attachments/assets/3aefc8bb-f7b7-4e47-a905-1e392d1b5410" />
 
