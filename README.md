@@ -27,7 +27,7 @@ The project emphasizes **clarity of domain**, **scalability**, and **production-
 
 ### Home Page
 
-This page serves as a multidimensional introduction to both ancient and modern India, utilizing a dynamic grid layout that alternates across eight fundamental pillars: from politics and economy to geography and society. Technically, it stands out for its advanced conditional rendering, which reorders content (images and secondary paragraphs) based on the user's device to ensure a logical visual hierarchy. The color palette—Saffron, White, and Green—reinforces the national identity, while the integration of an external API ensures that macroeconomic and demographic data remain accurate and up-to-date.
+This page serves as a multidimensional introduction to both ancient and modern India, utilizing a dynamic grid layout that alternates across eight fundamental pillars: from politics and economy to geography and society. Technically, it stands out for its advanced conditional rendering, which reorders content (images and secondary paragraphs) based on the user's device to ensure a logical visual hierarchy. The color palette (Saffron, White, and Green) reinforces the national identity, while the integration of an external API ensures that macroeconomic and demographic data remain accurate and up-to-date.
 
 <img width="765" height="633" alt="bharat-home" src="https://github.com/user-attachments/assets/6399c783-2fdc-4bdd-b68c-4073d098b932" />
 
